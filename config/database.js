@@ -66,13 +66,8 @@ module.exports = {
   |
   */
   pg: {
-    client: 'pg',
-    connection: {
-      host: Env.get('DB_HOST', 'localhost'),
-      user: Env.get('DB_USER', 'root'),
-      password: Env.get('DB_PASSWORD', ''),
-      database: Env.get('DB_DATABASE', 'adonis')
-    }
-  }
+  client: 'pg',
+  connection: Env.get('DATABASE_URL', 'postgres://hdbiwcjqllshdd:59cd221c366c0268cd16a754d6f60907dfa8bf5694c15e6d660ed75e1110c24c@ec2-54-163-224-108.compute-1.amazonaws.com:5432/drqpocuhtofkn')
+}
 
 }
